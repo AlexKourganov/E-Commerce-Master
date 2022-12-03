@@ -19,7 +19,7 @@ export const fetchCollectionsFailure = errorMessage =>({
 // call that function with dispatch method itself as the first argument
 
 export const fetchCollectionsStartAsync = () => {
-    console.log('I am being called yeyeyey');
+   
     return dispatch => {
         const collectionRef = firestore.collection('collections');
         dispatch(fetchCollectionsStart());
